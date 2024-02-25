@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label>Name</label>
+      <input type="text" />
+      <br />
+      <label>Password</label>
+      <input type="password" />
+      <br />
+      <label>Email</label>
+      <input type="email" />
+      <br />
+      <label>Date</label>
+      <input type="date" />
+      <br />
+      <label>Age</label>
+      <input
+        id="age"
+        type="range"
+        min="0"
+        max="70"
+        value="0"
+        step="1"
+        onchange="getSlider()"
+      />
+      <label id="rangeVal">0</label>
+      <br />
+      <label>Gender</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="m"
+        onclick="getGender()"
+      />
+      <label>male</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="f"
+        onClick="getGender()"
+      />
+      <label>female</label>
+      <input
+      class="gender"
+      type="radio"
+      name="gender"
+      value="o"
+      onClick="getGender()"
+    />
+    <label>Other</label>
+      <hr />
+      <br />
+      <label>Upload CV</label>
+      <input type="file" />
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
