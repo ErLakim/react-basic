@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,8 +8,12 @@
   <body>
     <form>
       <label>Name</label>
-      <input type="text" />
+      <input type="text" name="name" onkeyup="getName()" />
       <br />
+      <hr />
+      <label id="nameVal">name</label>
+      <hr />
+      
       <label>Password</label>
       <input type="password" />
       <br />
@@ -49,17 +53,51 @@
       />
       <label>female</label>
       <input
-      class="gender"
-      type="radio"
-      name="gender"
-      value="o"
-      onClick="getGender()"
-    />
-    <label>Other</label>
+        class="gender"
+        type="radio"
+        name="gender"
+        value="o"
+        onClick="getGender()"
+      />
+      <label>Other</label>
       <hr />
       <br />
       <label>Upload CV</label>
       <input type="file" />
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <form id="contactUs" onsubmit="getForm(); return false;">
+      <label> Name</label>
+      <input placeholder="your name" name="name" />
+      <br />
+      <label>Gender</label>
+      <input class="gender" type="radio" name="gender" value="m" />
+      <label>male</label>
+      <input class="gender" type="radio" name="gender" value="f" />
+      <label>female</label>
+      <input class="gender" type="radio" name="gender" value="o" />
+      <label>Other</label>
+      <hr />
+      <br />
+      <label> Email</label>
+      <input type="email" placeholder="name@email.com" name="email" required />
+      <br />
+      <label>Message</label>
+      <textarea rows="5" placeholder="Your message" name="message"></textarea>
+      <br />
+
+      <button type="submit">Submit Me</button>
     </form>
     <script src="index.js"></script>
   </body>
