@@ -1,12 +1,25 @@
-const getForm = () => {
+const btn = document.getElementById("formBtn");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
   const form = document.getElementById("contactUs");
   const formData = new FormData(form);
-const obj ={};
-formData.forEach((val,key)=>{
-  obj[key]=val;
+  const obj = {};
+  formData.forEach((val, key) => {
+    obj[key] = val;
+  });
+  console.log({ obj });
 });
-console.log(obj);
-};
+
+
+// const getForm = () => {
+//   const form = document.getElementById("contactUs");
+//   const formData = new FormData(form);
+// const obj ={};
+// formData.forEach((val,key)=>{
+//   obj[key]=val;
+// });
+// console.log({obj});
+// };
 
 // const getSlider = () => {
 //   const age = document.getElementById("age").value;

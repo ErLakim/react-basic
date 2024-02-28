@@ -1,0 +1,9 @@
+.l-card {
+  width: 50%;
+  padding: 20px;
+  height: fit-content;
+}
+
+.l-card-container {
+  height: 100vh;
+}
